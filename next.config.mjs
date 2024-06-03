@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "precious-goldfinch-167.convex.cloud",
       },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+      },
     ],
   },
 };
