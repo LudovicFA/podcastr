@@ -133,7 +133,7 @@ const CreatePodcast = () => {
               <GeneratePodcast 
                 setAudioStorageId={setAudioStorageId}
                 setAudio={setaudioUrl}
-                voiceType={voiceType}
+                voiceType={voiceType!}
                 audio={audioUrl}
                 voicePrompt={voicePrompt}
                 setVoicePrompt={setVoicePrompt}
