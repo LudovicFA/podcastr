@@ -90,6 +90,8 @@ const GenerateThumbnail = ({setImage, setImagePrompt, image, imagePrompt, setIma
         title: 'Error generating thumbnail',
         variant: 'destructive'
       })
+      setIsImageLoading(false)
+
     }
   }
 
@@ -129,6 +131,7 @@ const GenerateThumbnail = ({setImage, setImagePrompt, image, imagePrompt, setIma
             </div>
             <div className='w-full max-w-[200px]'>
                 <Button 
+                  type='button'
                   className="text-16 bg-orange-1 py-4 font-bold text-white-1"
                   onClick={generateImage}
                   >
@@ -164,7 +167,7 @@ const GenerateThumbnail = ({setImage, setImagePrompt, image, imagePrompt, setIma
           ): (
             <div className='text-16 flex-center font-medium text-white-1'>
                   Uploading
-                        <Loader size={20} className="animate-spin ml-2"/>
+                  <Loader size={20} className="animate-spin ml-2"/>
             </div>
           )}
           <div className='flex flex-col items-center gap-1'>
